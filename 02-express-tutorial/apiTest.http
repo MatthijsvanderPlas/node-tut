@@ -1,0 +1,48 @@
+### testing
+
+GET http://localhost:5000/api/people HTTP/1.1
+
+###
+
+GET http://localhost:5000/api/people/1 HTTP/1.1
+
+###
+
+POST http://localhost:5000/login HTTP/1.1
+  content-type: application/json
+
+{
+  "name": "john"
+}
+###
+
+POST http://localhost:5000/api/people HTTP/1.1
+  content-type: application/json
+  
+{
+  "name": "john"
+}
+
+###
+
+POST http://localhost:5000/api/people/postman HTTP/1.1
+  content-type: application/json
+  
+{
+  "name": "john"
+}
+
+###
+
+PUT http://localhost:5000/api/people/1 HTTP/1.1
+  content-type: application/json
+  
+{
+  "name": "peter"
+}
+
+###
+
+DELETE  http://localhost:5000/api/people/5 HTTP/1.1
+  content-type: application/json
+  
